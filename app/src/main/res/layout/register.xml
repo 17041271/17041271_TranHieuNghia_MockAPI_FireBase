@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/register"/>
+
+    <EditText
+        android:id="@+id/editNhapUserNameDangKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="15"
+        android:hint="Nhập email"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editNhapLaiMK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="15"
+        android:hint="Confirm password"
+        app:layout_constraintEnd_toEndOf="@+id/editNhapMKDangKi"
+        app:layout_constraintStart_toStartOf="@+id/editNhapMKDangKi"
+        app:layout_constraintTop_toBottomOf="@+id/editNhapMKDangKi" />
+
+    <EditText
+        android:id="@+id/editNhapMKDangKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="15"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="@+id/editNhapUserNameDangKi"
+        app:layout_constraintStart_toStartOf="@+id/editNhapUserNameDangKi"
+        app:layout_constraintTop_toBottomOf="@+id/editNhapUserNameDangKi" />
+
+    <Button
+        android:id="@+id/btnSignUpDangKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="15"
+        android:text="Sign up"
+        app:layout_constraintEnd_toEndOf="@+id/editNhapLaiMK"
+        app:layout_constraintStart_toStartOf="@+id/editNhapLaiMK"
+        app:layout_constraintTop_toBottomOf="@+id/editNhapLaiMK" />
+
+    <TextView
+        android:id="@+id/tvLoginNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:text="Already register. Login now"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignUpDangKi"
+        app:layout_constraintStart_toStartOf="@+id/btnSignUpDangKi"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUpDangKi" />
+</androidx.constraintlayout.widget.ConstraintLayout>
